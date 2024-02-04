@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import ProductData from '../jsons/ProductData';
 import { Link } from 'react-router-dom';
-import Ratting from '../components/RAtting';
+import Ratting from '../components/Ratting';
 
 interface IProductData {
     imgUrl: string;

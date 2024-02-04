@@ -17,16 +17,16 @@ interface IProduct {
     quantity: number;
 }
 
-interface IBannerList{
-    iconName: string;
-    text: string;
-}
+// interface IBannerList{
+//     iconName: string;
+//     text: string;
+// }
 
-const bannerList: IBannerList[] = [
-    { iconName: "icofont-users-alt-4", text: "1.5 Million Customers", },
-    { iconName: "icofont-notification", text: "More then 2000 Marchent", },
-    { iconName: "icofont-globe", text: "Buy Anything Online", }
-];
+// const bannerList: IBannerList[] = [
+//     { iconName: "icofont-users-alt-4", text: "1.5 Million Customers", },
+//     { iconName: "icofont-notification", text: "More then 2000 Marchent", },
+//     { iconName: "icofont-globe", text: "Buy Anything Online", }
+// ];
 
 
 const Banner: FC = () => {
@@ -48,7 +48,7 @@ const Banner: FC = () => {
                 <div className="banner-content">
                     <h2>Search Your One From <span>Thousand</span> of Products</h2>
                     <form>
-                        <SelectedCategory select={"all"} />
+                        <SelectedCategory select="all" />
                         <input type="text" name="search" id="search" placeholder="Search your product" value={searchInput}
                         onChange={handleSearch}/> 
                         <button type="submit"><i className="icofont-search"></i></button>        

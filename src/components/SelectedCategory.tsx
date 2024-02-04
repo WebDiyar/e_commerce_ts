@@ -1,6 +1,6 @@
 const SelectedCategory = (select) => {
     return (
-        <select>
+        <select defaultValue={select}>
             <option value="all">All Categories</option>
             <option value="electronics">Electronics</option>
             <option value="computer">Computer</option>
