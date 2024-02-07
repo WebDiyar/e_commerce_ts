@@ -110,7 +110,6 @@ export const tweetList: ITweetListItem[] = [
     },
 ]
 
-
 export const footerbottomList: IFooterBottomListItem[] = [
     {
         text: 'Faculty',

@@ -1,6 +1,5 @@
-import productsData from './products.json';
-
-interface IProduct {
+import Data from './products.json';
+export interface IProduct {
     id: string;
     category: string;
     name: string;
@@ -14,6 +13,6 @@ interface IProduct {
     quantity: number;
 }
 
-const Data: IProduct[] = productsData;
+const productsData: IProduct[] = Data;
 
-export default Data;
+export default productsData;

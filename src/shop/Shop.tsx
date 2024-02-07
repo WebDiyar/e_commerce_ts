@@ -2,7 +2,7 @@ import { useState } from 'react';
 import PageHeader from '../components/PageHeader'
 import ProductCards from './ProductCards';
 import Pagination from './Pagination';
-import Data from "../productsJSON"
+import productsData from "../productsJSON"
 import Search from './Search';
 import ShopCategory from './ShopCategory';
 import PopularPost from './PopularPost';
@@ -14,9 +14,8 @@ type TSelectedCategory = "Men's Sneaker" | "Men's Pants" | "Men's Boot" | 'Bag' 
  
 const Shop = () => {
     const [GridList, setGridList] = useState<boolean>(true);
-    const [products, setProducts] = useState(Data);
+    const [products, setProducts] = useState(productsData);
     const [selectedCategory, setSelectedCategory] = useState<TSelectedCategory>("All");
-    // console.log(products);
 
     //pagination
     const [currentPage, setCurrentPage] = useState<number>(1);
@@ -26,15 +25,15 @@ const Shop = () => {
     const indexOfFirstPage = indexOfLastProduct - productsPerPage;
     const currentProducts = products.slice(indexOfFirstPage, indexOfLastProduct);
 
-    //change the curr page
+    //change the current page
     const paginate = (pageNumber: number) => {
         setCurrentPage(pageNumber);
     }
 
-    const menuItems = [...new Set(Data.map(val => val.category))];  //TSelectedCategory
+    const menuItems = [...new Set(productsData.map(val => val.category))];  //TSelectedCategory
 
     const filterItems = (currentCategory: TSelectedCategory) => {
-        const newItem = Data.filter(product => {
+        const newItem = productsData.filter(product => {
             return currentCategory === product.category;
         })
 

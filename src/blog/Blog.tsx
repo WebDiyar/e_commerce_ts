@@ -1,4 +1,5 @@
-import PageHeader from "../components/PageHeader"
+import PageHeader from "../components/PageHeader";
+
 const Blog = () => {
   return (
     <div>

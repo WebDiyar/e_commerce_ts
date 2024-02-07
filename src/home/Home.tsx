@@ -7,7 +7,6 @@ import Location from "./Location"
 import Register from "./Register"
 import Sponsor from "./Sponsor"
 
-
 const Home = () => {
   return (
     <div className="" >

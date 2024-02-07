@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-
 interface ICategoryItem{
     imgUrl: string;
     imgAlt: string;

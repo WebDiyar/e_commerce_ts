@@ -3,7 +3,6 @@ import Ratting from '../components/Ratting';
 import IProduct from '../shop/Shop'
 import Data from "../productsJSON";
 export { Data };
-    
 interface IProduct {
     id: string;
     category: string;

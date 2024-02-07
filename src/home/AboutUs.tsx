@@ -1,13 +1,12 @@
 import CountUp from 'react-countup';
 import { Link } from 'react-router-dom';
-
-interface IcountList{
+interface ICountList{
     iconName: string;
     count: string;
     text: string;
 }
 
-const countList: IcountList[] = [
+const countList: ICountList[] = [
     {
         iconName: 'icofont-users-alt-4',
         count: '11600',

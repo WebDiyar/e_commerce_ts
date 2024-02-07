@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-
 interface IClientsList{
     imgUrl: string;
     imgAlt: string;

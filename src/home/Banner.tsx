@@ -2,7 +2,6 @@ import React, { FC, useState } from "react"
 import productsData from '../products.json';
 import { Link } from "react-router-dom";
 import SelectedCategory from "../components/SelectedCategory";
-
 interface IProduct {
     id: string;
     category: string;
@@ -17,18 +16,6 @@ interface IProduct {
     quantity: number;
 }
 
-// interface IBannerList{
-//     iconName: string;
-//     text: string;
-// }
-
-// const bannerList: IBannerList[] = [
-//     { iconName: "icofont-users-alt-4", text: "1.5 Million Customers", },
-//     { iconName: "icofont-notification", text: "More then 2000 Marchent", },
-//     { iconName: "icofont-globe", text: "Buy Anything Online", }
-// ];
-
-
 const Banner: FC = () => {
     const [searchInput, setSearchInput] = useState<string>('');
     const [filteringProducts, setFilteringProducts] = useState<IProduct[]>(productsData);
@@ -37,7 +24,6 @@ const Banner: FC = () => {
         const searchItem = e.target.value;
         setSearchInput(searchItem);
 
-        //filtering
         const filtered = productsData.filter(product => product.name.toLowerCase().includes(searchItem.toLowerCase()));
         setFilteringProducts(filtered);
     }

@@ -2,7 +2,6 @@ import { FC } from "react";
 import Data from "../productsJSON";
 
 type TSelectedCategory = "Men's Sneaker" | "Men's Pants" | "Men's Boot" | 'Bag' | 'Cap' | 'Earphones' | 'Bottle' | "All";
-
 interface IProduct {
     id: string;
     category: string;
@@ -16,7 +15,6 @@ interface IProduct {
     shipping: number;
     quantity: number;
 }
-
 interface ShopCategoryProps<TCategory> {
     filterItems: (currentCategory: TCategory) => void;
     setItem: React.Dispatch<React.SetStateAction<IProduct[]>>;

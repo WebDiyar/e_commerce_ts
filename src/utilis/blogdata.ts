@@ -1,4 +1,4 @@
-type IBlogItem = {
+type TBlogItem = {
     id: number;
     imgUrl: string;
     imgAlt: string;
@@ -12,9 +12,9 @@ type IBlogItem = {
     }[]
 };
 
-type IBLigList = IBlogItem[];
+type TLigList = TBlogItem[];
 
-const blogList: IBLigList = [
+const blogList: TLigList = [
     {   id: 1,
         imgUrl: '/src/assets/images/blog/01.jpg',
         imgAlt: 'Blog Thumb',
