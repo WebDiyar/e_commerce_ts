@@ -1,7 +1,8 @@
+import PageHeader from "../components/PageHeader"
 const Blog = () => {
   return (
     <div>
-      Blog
+      <PageHeader title="Blog Page" currPage="Blogs" />
     </div>
   )
 }
