@@ -1,13 +1,11 @@
 import { FC, useState } from "react"
 import { IProduct } from "../productsJSON"
 import { Link } from "react-router-dom"
-
 interface IPropsProductDisplay {
     item: IProduct,
     key?: string
 }
-
-interface IProductDisplaying {
+export interface IProductDisplaying {
     id: string;
     img: string;
     name: string;

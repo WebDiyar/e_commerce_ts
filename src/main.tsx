@@ -7,6 +7,7 @@ import Home from './home/Home.tsx';
 import Blog from './blog/Blog.tsx';
 import Shop from './shop/Shop.tsx';
 import SingleProduct from './shop/SingleProduct.tsx';
+import CartPage from './shop/CartPage.tsx';
 
 // bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -23,6 +24,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path='/blog' element={<Blog />} />
         <Route path='/shop' element={<Shop />} />
         <Route path='/shop/:id' element={<SingleProduct />} />
+        <Route path='/cart-page' element={<CartPage/>} />
       </Route> 
     </Routes>
   </BrowserRouter>

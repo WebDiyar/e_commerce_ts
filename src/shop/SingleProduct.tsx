@@ -5,7 +5,9 @@ import PageHeader from "../components/PageHeader";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import ProductDisplay from "./ProductDisplay";
-
+import Review from "./Review";
+import Tags from "./Tags";
+import PopularPost from "./PopularPost";
 
 const SingleProduct = () => {
     const [products, setProducts] = useState<IProduct[]>([]);
@@ -80,16 +82,17 @@ const SingleProduct = () => {
                                 </div>
 
                                 <div className="review">
-                                    {/* <Review /> */}
+                                    <Review/>
                                 </div>
+
                             </article>
                         </div>
 
                         {/* right side */}
                         <div className="col-lg-4 col-md-7 col-12">
                             <aside className="ps-lg-4">
-                                {/* <MostPopularPost />
-                                <Tags /> */}
+                                <PopularPost/>
+                                <Tags />
                             </aside>
                         </div>
                     </div>
