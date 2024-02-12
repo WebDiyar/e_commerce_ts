@@ -34,7 +34,7 @@ const Banner: FC = () => {
                 <div className="banner-content">
                     <h2>Search Your One From <span>Thousand</span> of Products</h2>
                     <form>
-                        <SelectedCategory select="all" />
+                        <SelectedCategory />
                         <input type="text" name="search" id="search" placeholder="Search your product" value={searchInput}
                         onChange={handleSearch}/> 
                         <button type="submit"><i className="icofont-search"></i></button>        

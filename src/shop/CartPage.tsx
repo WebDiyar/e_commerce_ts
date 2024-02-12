@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { IProductDisplaying } from './ProductDisplay'
 import PageHeader from "../components/PageHeader";
 import { Link } from "react-router-dom";
+import CheckOutPage from "./CheckOutPage";
 
 const CartPage = () => {
     const [cartItems, setCartItems] = useState<IProductDisplaying[]>([]);
@@ -132,7 +133,7 @@ const CartPage = () => {
                                     <input type="submit" value="Update Cart" />
                                     {/* <Link to="/check-out"><input type="submit" value="Proceed to Checkout" /></Link> */}
                                     <div>
-                                        {/* <CheckoutPage /> */}
+                                        <CheckOutPage/>
                                     </div>
                                 </form>
                             </div>
