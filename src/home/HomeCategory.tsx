@@ -14,13 +14,13 @@ const categoryList: ICategoryItem[] = [
         title: 'DSLR Camera',
     },
     {
-        imgUrl: '/src/assets/images/category/02.jpg',
+        imgUrl: '/public/favicon.ico',
         imgAlt: 'category rajibraj91 rajibraj',
         iconName: 'icofont-brand-windows',
         title: 'Shoes',
     },
     {
-        imgUrl: '/src/assets/images/category/03.jpg',
+        imgUrl: '/test/01.jpg',
         imgAlt: 'category rajibraj91 rajibraj',
         iconName: 'icofont-brand-windows',
         title: 'Photography',
@@ -32,7 +32,7 @@ const categoryList: ICategoryItem[] = [
         title: 'Formal Dress',
     },
     {
-        imgUrl: '/src/assets/images/category/05.jpg',
+        imgUrl: './src/assets/images/category/05.jpg',
         imgAlt: 'category rajibraj91 rajibraj',
         iconName: 'icofont-brand-windows',
         title: 'Colorful Bags',
