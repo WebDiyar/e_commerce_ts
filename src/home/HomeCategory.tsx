@@ -32,7 +32,7 @@ const categoryList: ICategoryItem[] = [
         title: 'Formal Dress',
     },
     {
-        imgUrl: '/public/test/02.jpg', 
+        imgUrl: '/test/02.jpg', 
         imgAlt: 'category rajibraj91 rajibraj',
         iconName: 'icofont-brand-windows',
         title: 'Colorful Bags',
