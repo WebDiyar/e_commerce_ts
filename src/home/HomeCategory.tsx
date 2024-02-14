@@ -26,7 +26,7 @@ const categoryList: ICategoryItem[] = [
         title: 'Photography',
     },
     {
-        imgUrl: 'src/assets/images/category/04.jpg',
+        imgUrl: '/test/02.jpg',
         imgAlt: 'category rajibraj91 rajibraj',
         iconName: 'icofont-brand-windows',
         title: 'Formal Dress',
@@ -38,7 +38,7 @@ const categoryList: ICategoryItem[] = [
         title: 'Colorful Bags',
     },
     {
-        imgUrl: '/src/assets/images/category/06.jpg',
+        imgUrl: '/assets/images/category/06.jpg',
         imgAlt: 'category rajibraj91 rajibraj',
         iconName: 'icofont-brand-windows',
         title: 'Home Decor',
